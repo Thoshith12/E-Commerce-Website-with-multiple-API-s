@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+
+<body>
+
+
+    <nav>
+        <ul>
+            <li class="home" id="home">Home</li>
+            <li class="cat" id="smartphones">Smartphones</li>
+            <li class="cat" id="electronics">Electronics</li>
+            <li class="cat" id="laptops">Laptops</li>
+            <li class="cat" id="fragrances">Fragrances</li>
+            <li>
+                <label for="more"></label>
+                <select id="more" onchange="handleSection()">
+                    <option class="cat" value="" disabled selected>More</option>
+                    <option class="cat">Skincare</option>
+                    <option class="cat">Groceries</option>
+                    <option class="cat">Home-Decoration</option>
+                    <option class="cat">Men's Clothing</option>
+                    <option class="cat">Jewelery</option>
+                    <option class="cat">Women's clothing</option>
+                </select>
+            </li>
+            <li class="cart" id="cartNav">Cart<span id="cartCount" class="cart-count">0</span></li>
+        </ul>
+    </nav>
+    <main></main>
+    <div id="cartPage" class="cartPage">
+        <div id="cart">
+            <h5>Cart</h5>
+            <div id="cartItems"></div>
+            <div id="totalPrice"></div>
+        </div>
+    </div>    
+    <script src="ecommerce.js"></script>
+
+</body>
+
+</html>
